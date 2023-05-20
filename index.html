@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Notas con Fotos</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+  <h1>Notas con Fotos</h1>
+
+  <div>
+
+    <label for="link-url">URL del enlace:</label>
+
+    <input type="text" id="link-url">
+
+    <br>
+
+    <label for="tags">Categorías:</label>
+
+    <input type="text" id="tags">
+
+    <br>
+
+    <label for="comment">Comentario:</label>
+
+    <textarea id="comment"></textarea>
+
+    <br>
+
+    <button onclick="addPhoto()">Agregar Foto</button>
+
+  </div>
+
+  <div class="tags">
+
+    <label for="tag-filter">Filtrar por categoría:</label>
+
+    <input type="text" id="tag-filter">
+
+    <button onclick="filterByTag()">Filtrar</button>
+
+  </div>
+
+  <div class="grid" id="grid-container">
+
+    <!-- Aquí se mostrarán las fotos -->
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
